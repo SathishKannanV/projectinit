@@ -1,0 +1,1 @@
+COLLECTION_DHT = 'DHT_sensor'
