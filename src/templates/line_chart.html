@@ -5,17 +5,17 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Site Traffic"
+		text: "Temperature & Humidity Data"
 	},
 	axisX:{
-		valueFormatString: "DD MMM",
+		//valueFormatString: "DD MMM",
 		crosshair: {
 			enabled: true,
-			snapToDataPoint: true
+			//snapToDataPoint: true
 		}
 	},
 	axisY: {
-		title: "Number of Visits",
+		title: "Number of Units",
 		crosshair: {
 			enabled: true
 		}
@@ -33,9 +33,9 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{
 		type: "line",
 		showInLegend: true,
-		name: "Total Visit",
+		name: "Temperature",
 		markerType: "square",
-		xValueFormatString: "DD MMM, YYYY",
+		//xValueFormatString: "DD MMM, YYYY",
 		color: "#F08080",
 		dataPoints: [
 			{ x: new Date(2017, 0, 3), y: 650 },
@@ -57,7 +57,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	{
 		type: "line",
 		showInLegend: true,
-		name: "Unique Visit",
+		name: "Humidity",
 		lineDashType: "dash",
 		dataPoints: [
 			{ x: new Date(2017, 0, 3), y: 510 },
